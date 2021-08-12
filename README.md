@@ -1,6 +1,6 @@
 # [telegraf](https://www.npmjs.com/package/telegraf)-ignore-old-messages
 
-[![Dependencies](https://img.shields.io/badge/dependencies-none-green)](# "zero dependency")
+[![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)](# "zero dependency")
 
 Ignores old messages in Telegram chats.
 > e.g. bot was off for an hour > each of 1000 users sent 2 messages in that time > bot wakes up and gets all the updates > bot probably crashes
