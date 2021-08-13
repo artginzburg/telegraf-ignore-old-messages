@@ -1,6 +1,6 @@
 {
   "name": "telegraf-ignore-old-messages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ignore old messages - middleware for Telegraf",
   "license": "MIT",
   "repository": "artginzburg/telegraf-ignore-old-messages",
