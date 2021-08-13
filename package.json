@@ -1,17 +1,23 @@
 {
   "name": "telegraf-ignore-old-messages",
   "version": "1.0.1",
-  "description": "Ignore old messages - middleware for Telegraf",
+  "description": "The crash-preventing middleware for Telegram bots",
   "license": "MIT",
   "repository": "artginzburg/telegraf-ignore-old-messages",
   "funding": "https://www.buymeacoffee.com/artginzburg",
   "author": "Art Ginzburg <ginzburg.arthur@gmail.com>",
   "keywords": [
     "telegraf",
+    "telegram",
+    "bot",
+    "middleware",
+    "api",
+    "skip",
     "ignore",
     "old",
+    "outdated",
     "messages",
-    "middleware"
+    "crash"
   ],
   "main": "index.js",
   "engines": {
@@ -21,7 +27,7 @@
     "test": "echo \"Error: no test specified (see README.md#caught-a-bug)\" && exit 1"
   },
   "peerDependencies": {
-    "telegraf": ">=3.7.1"
+    "telegraf": ""
   },
   "reveal": true
 }

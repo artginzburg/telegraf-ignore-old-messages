@@ -1,21 +1,16 @@
 const { Composer } = require('telegraf');
 
-const defaultConfig = 1;
-// default message skipping interval
+function dateInSeconds() {
+  return Math.round(Date.now() / 1000);
+}
 
-module.exports = function ignoreOldMessages(afterMinutes = defaultConfig) {
+module.exports = function ignoreOldMessages(afterMinutes = 1) {
   const afterSeconds = afterMinutes * 60;
 
   return Composer.on('message', (ctx, next) => {
-    const currentDateInSeconds = Date.now() / 1000;
-
-    if (currentDateInSeconds - ctx.message.date < afterSeconds) {
-      // bypass if message date was less then `afterSeconds` ago
+    if (dateInSeconds() - ctx.message.date < afterSeconds) {
+      // bypass if message was sent less than `afterMinutes` minutes ago
       return next();
     }
-
-    // console.log(
-    //   `Ignoring message from ${ctx.from.id} at ${ctx.chat.id} (${currentDateInSeconds}:${ctx.message.date})`,
-    // );
   });
 };
