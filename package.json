@@ -1,6 +1,6 @@
 {
   "name": "telegraf-ignore-old-messages",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The crash-preventing middleware for Telegram bots",
   "license": "MIT",
   "repository": "artginzburg/telegraf-ignore-old-messages",
