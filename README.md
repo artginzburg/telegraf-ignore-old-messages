@@ -2,6 +2,18 @@
 
 [![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)](# "zero dependency")
 
+### P.S.
+Currently, you can implement this via telegraf configuration.
+> But it does not have the configurable `skipAfter` interval.
+
+```js
+launchOptions: {
+  dropPendingUpdates: true,
+}
+```
+
+---
+
 Ignores old messages in Telegram chats.
 
 Why? POV:
